@@ -1,0 +1,1 @@
+nconvert -ratio -rtype lanczos -resize 800 600  -text_font "新細明體" 32 -text_color 255 255 255 -text_back 0 0 0 -text_flag bottom-right -text_pos -10 0 -text_rotation 0 -text "demo" 
