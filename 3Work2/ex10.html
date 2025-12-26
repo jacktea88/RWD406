@@ -20,8 +20,8 @@
    <div class="row">
      <div class="col">
       <p class="h4 text-danger text-center">站內常見問題說明:請先參考本頁的說明與解答，可以快速解決您的問題。</p>
-      <button class="btn btn-info">網站規則</button>
-      <p >網站內的所有內容都由業主提供或架站公司協力拍攝完成，版權由雙方合作所有。未經得本公司同意，任何人不可逕行複製或重製或修改並散播於公開場合。
+      <button class="btn btn-info data" data-bs-toggle="collapse" data-bs-target=".collapse">網站規則</button>
+      <p class="collapse" id="menu1">網站內的所有內容都由業主提供或架站公司協力拍攝完成，版權由雙方合作所有。未經得本公司同意，任何人不可逕行複製或重製或修改並散播於公開場合。
         <br>
         <img src="images/tip.jpg" alt="" class="img-fluid">
       </p>  
@@ -32,17 +32,17 @@
   <div class="row">
     <div class="col">
       <h1 class="text-secondary">客戶服務</h1>
-      <button>全部展開/隱藏</button>
-      <h2 class="text-primary h3">是否有提供送貨到離島的服務？</h2>
-      <h3 class="h5 text-white list-group-item list-group bg-dark">因航運成本較高，本站提供免運費服務的範圍只限台灣本島。
+      <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="h3">全部展開/隱藏</button>
+      <h2 class="text-primary h3" data-bs-toggle="collapse" data-bs-target="#a1">是否有提供送貨到離島的服務？</h2>
+      <h3 class="h5 text-white list-group-item list-group bg-dark collapse" id="a1">因航運成本較高，本站提供免運費服務的範圍只限台灣本島。
       若送貨地點是在離島等地時，目前暫不提供寄送服務。</h3>
       
-      <h2 class="text-primary h3">最多試用幾天內才能退貨呢？</h2>
-      <h3 class="h5 text-white list-group-item list-group bg-dark">依照消保法規定，消費者均享有商品到貨七天猶豫期之權益。
+      <h2 class="text-primary h3" data-bs-toggle="collapse" data-bs-target="#a2">最多試用幾天內才能退貨呢？</h2>
+      <h3 class="h5 text-white list-group-item list-group bg-dark collapse" id="a2">依照消保法規定，消費者均享有商品到貨七天猶豫期之權益。
       但退回商品必須是全新狀態且完整包裝，否則恕不接受退貨。</h3>
       
-      <h2 class="text-primary h3">退貨時是否需要負擔運費？</h2>
-      <h3 class="h5 text-white list-group-item list-group bg-dark">只要消費者是在七天的猶豫期或是保固期限之內退貨的話，
+      <h2 class="text-primary h3" data-bs-toggle="collapse" data-bs-target="#a3">退貨時是否需要負擔運費？</h2>
+      <h3 class="h5 text-white list-group-item list-group bg-dark collapse" id="a3">只要消費者是在七天的猶豫期或是保固期限之內退貨的話，
       其運費均由本站全額負責。</h3>
     </div>
   </div>
