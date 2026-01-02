@@ -12,7 +12,7 @@
   </head>
   <body>        
       
-   <div class="container">
+   <div class="container bg-dark text-white rounded">
      <div class="row">
        <div class="col">
         <h1>Web <span class="bg-danger badge">Survey</span></h1>
@@ -21,10 +21,32 @@
           <div class="form-group">
             <label for="user">姓名：</label><input type="text" placeholder="請輸入姓名" required id="user" class="form-control">
           </div>
-          <label for="email">郵件：</label><input type="email" placeholder="請輸入正確格式的電子郵件" required id="email">
-          <label for="tel">電話：</label><input type="tel" placeholder="請輸入行動電話號碼10位數" required id="tel">
-          <label for="num">數量：</label><input type="number" placeholder="請輸入購買數量" required id="num">
-        </form>
+          <div class="form-group">
+            <label for="email">郵件：</label><input type="email" placeholder="請輸入正確格式的電子郵件" required id="email" class="form-control"></div>
+          <div class="form-group">
+            <label for="tel">電話：</label><input type="tel" placeholder="請輸入行動電話號碼10位數" required id="tel" class="form-control"></div class="form-group">
+          <div class="form-group">
+            <label for="num">數量：</label><input type="number" placeholder="請輸入購買數量" requred id="num" class="form-control"></div class="form-group">
+          <h2 class="my-5">專業領域</h2>
+          <!-- (div>input)*3 -->
+          <div class="form-group form-check-inline"><input type="checkbox">Web Design</div>
+          <div class="form-group form-check-inline"><input type="checkbox">Graphic Design</div>
+          <div class="form-group form-check-inline"><input type="checkbox">Media</div>
+          <h2 class="my-3">何處得知</h2>
+          <!-- (div>input)*3 -->
+          <div class="ratio form-check-inline"><input type="radio" name="kk">News</div>
+          <div class="ratio form-check-inline"><input type="radio" name="kk">EDM</div>
+          <div class="ratio form-check-inline"><input type="radio" name="kk">Social Media</div>
+
+          <!-- (div>input)*2 -->
+          <div class="form-group text-center my-5">
+            <input type="submit" value="填好送出" class="btn btn-success mx-1">
+            <input type="reset" value="重新填寫" class="btn btn-danger mx-1">
+          </div>
+          
+          
+          
+          </form>
        </div>
      </div>
    </div>
