@@ -14,7 +14,18 @@
       
    <div class="container">
      <div class="row">
-       <div class="col"></div>
+       <div class="col">
+        <h1>Web <span class="bg-danger badge">Survey</span></h1>
+        <!-- form>(label+input)*4 -->
+        <form action="">
+          <div class="form-group">
+            <label for="user">姓名：</label><input type="text" placeholder="請輸入姓名" required id="user" class="form-control">
+          </div>
+          <label for="email">郵件：</label><input type="email" placeholder="請輸入正確格式的電子郵件" required id="email">
+          <label for="tel">電話：</label><input type="tel" placeholder="請輸入行動電話號碼10位數" required id="tel">
+          <label for="num">數量：</label><input type="number" placeholder="請輸入購買數量" required id="num">
+        </form>
+       </div>
      </div>
    </div>
 
