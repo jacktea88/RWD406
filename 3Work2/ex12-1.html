@@ -11,12 +11,17 @@
    <title>BS-組件組合-垂直按鈕導覽列</title>
   </head>
   <body>
-    <button class="btn btn-outline-danger" data-bs-toggle="offcanvas" data-bs-target=".offcanvas">
-        MENU
-    </button>
+    <div class="fixed-top justify-content-end d-flex">
+      <button class="btn btn-outline-danger" data-bs-toggle="offcanvas" data-bs-target=".offcanvas">
+          MENU
+      </button>
+    </div>
 
     <div class="offcanvas offcanvas-end">
-      <h1 class="navbar-brand">Photo</h1>
+      <div class="offcanvas-header">
+        <h1 class="">Photo</h1>
+        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
       
       <div class="offcanvas-body" id="menu">
         <ul class="list-group">
