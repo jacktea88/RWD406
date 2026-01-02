@@ -10,35 +10,46 @@
 
   <title>BS-組件組合-輪播照片</title>
   <style>
-    #pic1{
-      background-image: url(images/s15.jpg);
-      height: 75vh;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      /* background-attachment: fixed; */
-    }
-    #pic2{
-      background-image: url(images/s17.jpg);
-      height: 75vh;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      /* background-attachment: fixed; */
-    }
-    #pic3{
-      background-image: url(images/s13.jpg);
-      height: 75vh;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      /* background-attachment: fixed; */
-    }
-  </style>
+      /* 改成圓點的css在這裏設定沒有作用，要用行內css */
+      .navRound{
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        
+      }
+
+      /* 下面css說明： */
+        /* background-repeat: no-repeat; 用延展而不是重複 */
+        /* background-size: cover; 比例能跟裝置一樣大(自動調整) */
+        /* height: 75vh;  須要設高度，否則看不到圖片 */
+        /* background-image: url('images/cat.jpg');  */
+
+      #pic1{
+        background-image: url('images/s13.jpg'); 
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        height: 75vh; 
+      }
+      #pic2{
+        background-image: url('images/s15.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 75vh;
+      }
+      #pic3{
+        background-image: url('images/s17.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 75vh;
+      }
+    </style>
 </head>
 <body>
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col p-0">
         <div class="carousel slide" data-bs-ride="false" data-bs-interval="1000">
@@ -58,15 +69,15 @@
               </div>
             </div>
             <div class="carousel-item" id="pic2">
-              <img src="images/s17.jpg" alt="" class="img-fluid">
-              <div class="carousel-caption">
-                <h2 class="display-2 text-white">Awesome</h2>
+              <!-- <img src="images/s17.jpg" alt="" class="img-fluid"> -->
+              <div class="carousel-caption h-100 justify-content-center align-items-center d-flex">
+                <h2 class="display-2 text-white mt-5">Awesome</h2>
               </div>
             </div>
             <div class="carousel-item" id="pic3">
-              <img src="images/s13.jpg" alt="" class="img-fluid">
-              <div class="carousel-caption">
-                <h2 class="display-2 text-white">Wonderful</h2>
+              <!-- <img src="images/s13.jpg" alt="" class="img-fluid"> -->
+              <div class="carousel-caption h-100 justify-content-center align-items-center d-flex">
+                <h2 class="display-2 text-white mt-5">Wonderful</h2>
               </div>
             </div>
           </div>
