@@ -16,8 +16,8 @@
     <title>BS-組件組合-載入動畫</title>
     <style>
       .my-Spinnert {
-        width: 24px;
-        height: 24px;
+        width: 72px;
+        height: 72px;
       }
     </style>
   </head>
@@ -25,7 +25,26 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          
+          <div class="spinner-border text-danger">
+            <span class="visually-hidden">loading...</span>
+          </div>
+
+          <div class="spinner-grow text-warning">
+            <span class="visually-hidden">loading...</span>
+          </div>
+
+          <div class="spinner-border spinner-border-sm text-danger">
+            <span class="visually-hidden">loading...</span>
+          </div>
+
+          <button class="btn text-danger bg-warning">
+            <span class="spinner-border  spinner-border-sm"></span>
+            <span class="">loading...</span>
+          </button>
+
+          <div class="spinner-border text-info my-Spinnert">
+            <span class="visually-hidden">loading...</span>
+          </div>
 
         </div>
       </div>
