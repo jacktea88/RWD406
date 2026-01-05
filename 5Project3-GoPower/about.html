@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="css/style.css">
     <title>GoPower-關於我們</title>
     <style>
-        body{
-            
+        #banner{
+            background-image: url("images/banner4.jpg");
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            background-attachment: fixed;
+            /* background-attachment: fixed; */
+            height: 65vh;
         }
         /* .navBg{
             background-color: rgba(0, 0, 0, 0.3);
@@ -26,7 +27,7 @@
         } */
     </style>
 </head>
-<body>
+<body class="bg-dark">
 <nav class="navbar navbar-expand-md navbar-dark px-3 fixed-top navBg">
     <h1 class="navbar-brand">GoPower</h1>
     <button data-bs-toggle="collapse" data-bs-target="#menu" class="navbar-toggler">
@@ -48,9 +49,35 @@
     </div>
 </nav>
 <div class="container">
-    <div class="row">
-        
+    <!-- 第一列：BANNER -->
+    <div class="row" id="banner">
+       
     </div>
+    <!-- 第二列：一列二欄的圖文 -->
+    <div class="row">
+        <div class="col">
+            <h1 class="text-info">
+                | 關於我們 About Us
+                <span class="text-secondary d-block">創造美好的身體適能與擁有健康的人生。</span>
+            </h1>
+            <ul class="text-success list-unstyled">
+                <li>獨家客製化訓練課程</li>
+                <li>教練均為合格驗證機構</li>
+                <li>採用大數據智慧分析體適能</li>
+                <li>專屬營養師提供建議清單</li>
+            </ul>
+        </div>
+        <!-- 第二列右圖 -->
+        <div class="col">
+
+        </div>
+    </div>
+    
+
+
+
+
+
 </div>
 </body>
 <!-- 動態資訊框 -->
