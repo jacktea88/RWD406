@@ -10,12 +10,54 @@
 
   <title>BS-組件組合-滾動監聽</title>
 </head>
-
-<div class="container">
- <div class="row">
-   <div class="col"></div>
- </div>
-</div>    
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+<!-- nav>lu>(li>a{link$})*5 -->
+ <nav class="navbar navbar-dark fixed-top justify-content-end">
+  <!-- <ul class="navbar-nav flex-row">
+    <li class="btn"><a href="#area1" class="nav-link">link1</a></li>
+    <li class="btn"><a href="#area2" class="nav-link">link2</a></li>
+    <li class="btn"><a href="#area3" class="nav-link">link3</a></li>
+    <li class="btn"><a href="#area4" class="nav-link">link4</a></li>
+    <li class="btn"><a href="#area5" class="nav-link">link5</a></li>
+  </ul> -->
+  <!-- 第二種 -->
+  <div class="navbar-nav flex-row">
+    <button class="btn"><a href="#area1" class="nav-link">link1</a></button>
+    <button class="btn"><a href="#area2" class="nav-link">link2</a></button>
+    <button class="btn"><a href="#area3" class="nav-link">link3</a></button>
+    <button class="btn"><a href="#area4" class="nav-link">link4</a></button>
+    <button class="btn"><a href="#area5" class="nav-link">link5</a></button>
+  </div>
+ </nav>
+  <div class="container">
+  <div class="row vh-100">
+    <!-- 區塊一 -->
+    <div class="col-12 h-100 bg-secondary" id="area1">
+      <h1>Area1</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit saepe aut id dolorem! Alias ad eos, dolores ipsa facilis aspernatur incidunt, modi veniam quasi dicta iusto odio voluptatibus optio voluptates ipsam reiciendis cupiditate sed dolore error explicabo a ab consequuntur qui. Excepturi nihil animi itaque asperiores quisquam aperiam laborum quas.</p>
+    </div>
+    <!-- 區塊二 -->
+    <div class="col-12 h-100 bg-info" id="area2">
+      <h1>Area2</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit saepe aut id dolorem! Alias ad eos, dolores ipsa facilis aspernatur incidunt, modi veniam quasi dicta iusto odio voluptatibus optio voluptates ipsam reiciendis cupiditate sed dolore error explicabo a ab consequuntur qui. Excepturi nihil animi itaque asperiores quisquam aperiam laborum quas.</p>
+    </div>
+    <!-- 區塊三 -->
+    <div class="col-12 h-100 bg-success" id="area3">
+      <h1>Area3</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit saepe aut id dolorem! Alias ad eos, dolores ipsa facilis aspernatur incidunt, modi veniam quasi dicta iusto odio voluptatibus optio voluptates ipsam reiciendis cupiditate sed dolore error explicabo a ab consequuntur qui. Excepturi nihil animi itaque asperiores quisquam aperiam laborum quas.</p>
+    </div>
+    <!-- 區塊四 -->
+    <div class="col-12 h-100 bg-warning" id="area4">
+      <h1>Area4</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit saepe aut id dolorem! Alias ad eos, dolores ipsa facilis aspernatur incidunt, modi veniam quasi dicta iusto odio voluptatibus optio voluptates ipsam reiciendis cupiditate sed dolore error explicabo a ab consequuntur qui. Excepturi nihil animi itaque asperiores quisquam aperiam laborum quas.</p>
+    </div>
+    <!-- 區塊五 -->
+    <div class="col-12 h-100 bg-danger" id="area5">
+      <h1>Area5</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit saepe aut id dolorem! Alias ad eos, dolores ipsa facilis aspernatur incidunt, modi veniam quasi dicta iusto odio voluptatibus optio voluptates ipsam reiciendis cupiditate sed dolore error explicabo a ab consequuntur qui. Excepturi nihil animi itaque asperiores quisquam aperiam laborum quas.</p>
+    </div>
+  </div>
+  </div>    
 
 <!-- Optional JavaScript; choose one of the two! -->
 
