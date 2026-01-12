@@ -33,6 +33,15 @@
             background-image: url("images/gym4.png");
             
         }
+        .imgEffect {
+            opacity: 0.35; /*透明度*/
+            transition: all 0.5s;
+        }
+        .imgEffect:hover {
+            opacity: 1;
+            cursor: pointer;
+            transform: scale(0.9, 0.9);
+        }
         /* .navBg{
             background-color: rgba(0, 0, 0, 0.3);
             transition: all 0.8s;
@@ -80,63 +89,69 @@
         </div>
        
     </div>
-    <!-- 第二列：一列二欄的圖文 -->
-    <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-10 col-md-5 col-lg-4 bg-warning">
-            <h1 class="h5 text-info">
-                | 關於我們 About Us
-                <span class="h6 text-secondary d-block">創造美好的身體適能與擁有健康的人生。</span>
-            </h1>
-            <ul class="text-success list-unstyled">
-                <li class="h6">獨家客製化訓練課程</li>
-                <li class="h6">教練均為合格驗證機構</li>
-                <li class="h6">採用大數據智慧分析體適能</li>
-                <li class="h6">專屬營養師提供建議清單</li>
-            </ul>
+    <!-- 課程介紹共六個 -->
+     <!-- 第一列三欄 -->
+    <div class="row d-flex justify-content-center my-5">
+        <div class="col-12 col-md-3 text-center">
+            <!-- img+h2+p+a -->
+            <img src="images/workout2.jpg" alt="" class="img-fluid imgEffect" data-bs-toggle="modal" data-bs-target="#c1">
+            <h2 class="h5 text-info">基礎體重訓練</h2>
+            <p class="text-white">基本的四肢運動養成</p>
+            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#c1">前往</a>
         </div>
-        <!-- 第二列右圖 -->
-        <div class="col-10 col-md-5 col-lg-4">
-            <img src="images/door4.png" alt="" class="img-thumbnail">
+        <div class="col-12 col-md-3 text-center">
+            <!-- img+h2+p+a -->
+            <img src="images/workout3.jpg" alt="" class="img-fluid imgEffect">
+            <h2 class="h5 text-info">飛輪運動教室</h2>
+            <p class="text-white">訓練腳步最基本耐力</p>
+            <a class="btn btn-primary">前往</a>
+        </div>
+        <div class="col-12 col-md-3 text-center">
+            <!-- img+h2+p+a -->
+            <img src="images/workout5.jpg" alt="" class="img-fluid imgEffect">
+            <h2 class="h5 text-info">地板運動操</h2>
+            <p class="text-white">讓身體柔軟與訓練反應</p>
+            <a class="btn btn-primary">前往</a>
+        </div>
+     <!-- 第二列三欄 -->
+    <div class="row d-flex justify-content-center my-5">
+        <div class="col-12 col-md-3 text-center">
+            <!-- img+h2+p+a -->
+            <img src="images/workout6.jpg" alt="" class="img-fluid imgEffect">
+            <h2 class="h5 text-info">進階地板運動操</h2>
+            <p class="text-white">養成肌肉的收放與彈性</p>
+            <a class="btn btn-primary">前往</a>
+        </div>
+        <div class="col-12 col-md-3 text-center">
+            <!-- img+h2+p+a -->
+            <img src="images/workout7.jpg" alt="" class="img-fluid imgEffect">
+            <h2 class="h5 text-info">輔助器具操作</h2>
+            <p class="text-white">培養身體的耐壓力</p>
+            <a class="btn btn-primary">前往</a>
+        </div>
+        <div class="col-12 col-md-3 text-center">
+            <!-- img+h2+p+a -->
+            <img src="images/workout9.jpg" alt="" class="img-fluid imgEffect">
+            <h2 class="h5 text-info">風火輪鍛鍊</h2>
+            <p class="text-white">進階的腳步肌耐力養成</p>
+            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#c1">前往</a>
+        </div>        
+        
 
-        </div>
-    </div>
-    <!-- 第三列：一列二欄的圖文 -->
-    <div class="row d-flex justify-content-center align-items-center">
-        <!-- 第三列左圖 -->
-        <div class="col-10 col-md-5 col-lg-4">
-            <img src="images/door1.png" alt="" class="img-thumbnail">
 
-        </div>
-        <!-- 第三列文字 -->
-        <div class="col-10 col-md-5 col-lg-4 bg-warning">
-            <h1 class="h5 text-info">
-                | 店家資訊 Shop Information
-                <span class="h6 text-secondary d-block">創造美好的身體適能與擁有健康的人生。</span>
-            </h1>
-            <ul class="text-success list-unstyled">
-                <li class="h6">營業時間：10:00p.m. ~ 22:00p.m.</li>
-                <li class="h6">洽詢專線：03-3458168</li>
-                <li class="h6">店面地址：桃園市桃園區健康路一段168號</li>
-                
-            </ul>
-        </div>
+
+
+
+
+
+
+
+
+
     </div>
-    <!-- 引言列：一列一欄 -->
-    <div class="row d-flex justify-content-center">
-        <div class="col-10 col-md-10 col-lg-8">
-            <p class="text-white">
-                GoPower運動健身中心，致力於為每一位注重健康與生活品質的人提供專業、個性化的健身方案。不論男女老少，我們都相信運動不分年齡與性別，只要有目標，便能達成理想的健康狀態。在GoPower，我們不僅關注您的體能，更重視心靈與環保的平衡，提供一個清新、綠意盎然的運動環境，讓您在鍛鍊的同時也能與大自然零距離接觸。
-            </p>
-            <p class="text-white">
-                我們的專業團隊會根據每位會員的需求，設計最合適的健身計畫，無論是增肌、減脂，或是提升功能性訓練，皆能針對性地進行調整。GoPower運動健身中心的輔導員將全程陪伴，為您提供專業指導，確保每一步訓練都有效且安全。
-            </p>
-            <p class="text-white">
-                我們的使命，是透過健身改變人生，幫助您在強健身體的同時，擁有更自信、更充實的生活。
-                <br>無論您是健身新手或運動達人，GoPower都能成為您成長與進步的最佳夥伴，讓您在人生的每一個階段，保持最健康、最活力的狀態。
-            </p>
- 
-        </div>
-    </div>
+    
+    
+    
     <!-- footer列：一列三欄 -->
     <!-- .row>.col*3 -->
      <div class="row text-center text-secondary">
@@ -196,7 +211,37 @@
 </div>
 </body>
 <!-- 動態資訊框 -->
- 
+    <div class="modal fade" id="c1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="images/workout2.jpg" alt="" class="img-fluid">
+                    <h1 class="text-success">基礎體重訓練</h1>
+                    <p class="text-secondary">許多研究證實，持續的運動可以避免骨頭中的鈣質流失，進一步更可以可以增加骨骼密度，這對老年人跟女性特別重要。而重量訓練又比有氧運動更加有效，因為重量訓練可以讓訓練部位的骨骼感到壓力，進而增加骨骼的密度。而衝擊性的有氧雖然也能有同樣的效果，但卻同時也給關節帶來衝擊，對常有關節問題的老年人非常不利，研究顯示，即使是70歲以上的老年人，進行在每週三次，一次30分鐘的重量訓練後，骨質疏鬆的問題就可以獲得明顯的改善。而年輕人提早開始進行重量訓練，可以讓骨骼中保有更多的礦物質，避免將來出現骨質疏鬆的問題，尤其是女性更需要未雨綢繆，因為停經後的婦女骨質流失的速度遠比同年齡的男性要快。</p>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- 動態資訊框 -->
+    <!-- .modal.fade#c1>.modal-dialog.modal-dialog-centered>.model-content>.modal-body -->
+    <div class="modal fade" id="c1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="model-content">
+          <div class="modal-body bg-white rounded">
+            <img src="images/workout2.jpg" alt="" class="img-fluid" />
+            <h1 class="text-success">基礎體重訓練</h1>
+            <p class="text-secondary">
+              你是否有想過開始運動改變體態？無論是減脂、減重或增加肌耐力！每天只要花10分鐘的時間，你不用買訓練器材只用自己的體重就可以執行，如果你每天都認真執行這樣的計畫，在短時間內就可看到自己身體的改變，但這個訓練不會讓你快速獲得夢想中的身形，尤其是在體重超重的情形之下，不過卻能為你開啟運動的大門。現在就讓我們開始用這5種動作，執行４週的訓練計畫吧！
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> 
 
     <script>
         window.addEventListener("load", function () {
