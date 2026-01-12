@@ -61,12 +61,25 @@
 </div>
 </body>
 <!-- 動態資訊框 -->
- <div class="modal" id="cf">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-body m-0 p-1">
-                <div class="ratio ratio-16x9 rounded">
-                   <video src="media/total.mp4" autoplay loop muted></video> 
+    <div class="modal" id="cf">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body m-0 p-1">
+                    <div class="ratio ratio-16x9 rounded">
+                    <video src="media/total.mp4" autoplay loop muted></video> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 禁止copy的畫面 -->
+    <div class="modal" id="warning">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body m-0 p-1">
+                    <div class="ratio ratio-16x9 rounded">
+                    <img src="images/warning.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -84,6 +97,21 @@
                 "",
                 "width=500 height=900")
         }
+
+        // 禁止右鍵
+        document.oncontextmenu = function(){
+            // alert("禁止使用瀏覽器快捷鍵");
+            showWarning();
+            return false;
+        }
+
+        function showWarning(){
+            let warning = new bootstrap.Modal(document.querySelector("#warning"));
+            warning.show();
+        }
+
+
+        
 
     </script>
  </div>
